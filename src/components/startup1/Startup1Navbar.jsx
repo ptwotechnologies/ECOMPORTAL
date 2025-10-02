@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
-const StartupNavbar = () => {
+const Startup1Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="px-4 py-3 flex items-center bg-[#C76B3D] rounded-t-lg md:bg-white justify-between relative">
+    <nav className="px-4 py-3 flex items-center rounded-t-lg md:bg-white justify-between relative">
       {/* Left: Logo */}
       <div className="flex items-center space-x-2">
         <img
@@ -65,9 +65,9 @@ const StartupNavbar = () => {
       <div className="md:hidden">
         <button onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? (
-            <FaTimes size={22} className="text-white" />
+            <FaTimes size={22} className="text-[#6B4226]" />
           ) : (
-            <FaBars size={22} className="text-white" />
+            <FaBars size={22} className="text-[#6B4226]" />
           )}
         </button>
       </div>
@@ -75,34 +75,34 @@ const StartupNavbar = () => {
       {/* Mobile Menu */}
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="absolute top-full left-0 w-full bg-white flex flex-col items-center space-y-4 py-6 md:hidden shadow-lg z-50 rounded-2xl">
+        <div className="absolute top-full left-0 w-full bg-[#FCF5E5] flex flex-col items-center space-y-4 py-6 md:hidden shadow-lg z-50 rounded-2xl">
           <a
             href="#"
-            className="bg-[#C76B3D] text-white flex items-center gap-1 justify-center px-4 py-2 rounded-full text-sm"
+            className="bg-[#6B4226] text-white flex items-center gap-1 justify-center px-4 py-2 rounded-full text-sm"
           >
             Auxiliaries <MdOutlineKeyboardArrowDown />
           </a>
           <a
             href="#"
-            className="hover:bg-[#C76B3D] px-4 py-2 rounded-full font-medium text-sm"
+            className="hover:bg-[#6B4226] px-4 py-2 rounded-full font-medium text-sm"
           >
             Pricing
           </a>
           <a
             href="#"
-            className="hover:bg-[#C76B3D] px-4 py-2 rounded-full font-medium text-sm"
+            className="hover:bg-[#6B4226] px-4 py-2 rounded-full font-medium text-sm"
           >
             Resources
           </a>
           <a
             href="#"
-            className="underline underline-offset-4 hover:bg-[#C76B3D] px-4 py-2 rounded-full text-sm"
+            className="underline underline-offset-4 hover:bg-[#6B4226] px-4 py-2 rounded-full text-sm"
           >
             Sign in
           </a>
           <a
             href="#"
-            className="bg-[#C76B3D] px-6 py-2 rounded text-sm"
+            className="bg-[#6B4226] px-6 py-2 rounded text-sm"
           >
             Sign up
           </a>
@@ -112,4 +112,4 @@ const StartupNavbar = () => {
   );
 };
 
-export default StartupNavbar;
+export default Startup1Navbar;

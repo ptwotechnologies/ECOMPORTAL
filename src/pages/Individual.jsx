@@ -1,21 +1,21 @@
 import React from "react";
-import StartupNavbar from "../components/startup/StartupNavbar";
-import StartupHero from "../components/startup/StartupHero";
 import StartupMarket from "../components/startup/StartupMarket";
+import IndividualHero from "../components/individuals/IndividualHero";
 import StartupConsult from "../components/startup/StartupConsult";
 import StartupStarted from "../components/startup/StartupStarted";
-import StartupPrices from "../components/startup/StartupPrices";
-const Startup = () => {
+import IndividualNavbar from "../components/individuals/IndividualNavbar";
+import ChannelPrices from "../components/channel/ChannelPrices";
+const Individual = () => {
   return (
     <div className="bg-[#ffffff]">
-      <StartupNavbar></StartupNavbar>
-      <StartupHero></StartupHero>
+      <IndividualNavbar></IndividualNavbar>
+      <IndividualHero></IndividualHero>
       <StartupMarket></StartupMarket>
       <StartupConsult></StartupConsult>
       <StartupStarted></StartupStarted>
-      <StartupPrices></StartupPrices>
+      <ChannelPrices></ChannelPrices>
     </div>
   );
 };
 
-export default Startup;
+export default Individual;

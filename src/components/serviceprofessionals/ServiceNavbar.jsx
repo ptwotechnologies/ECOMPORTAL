@@ -75,35 +75,32 @@ const ServiceNavbar = () => {
       {/* Mobile Menu */}
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="absolute top-full left-0 w-full bg-[#2D3A80] flex flex-col items-center space-y-4 py-6 md:hidden shadow-lg z-50 rounded-t-2xl">
+        <div className="absolute top-full left-0 w-full bg-[#2D3A80] flex flex-col items-center space-y-4 py-6 md:hidden shadow-lg z-50 rounded-2xl">
           <a
             href="#"
-            className="bg-[#6B4226] text-white flex items-center gap-1 justify-center px-4 py-2 rounded-full text-sm"
+            className="bg-[#C76B3D] text-white flex items-center gap-1 justify-center px-4 py-2 rounded-full text-sm"
           >
             Auxiliaries <MdOutlineKeyboardArrowDown />
           </a>
           <a
             href="#"
-            className="text-white hover:bg-[#6B4226] hover:text-white px-4 py-2 rounded-full font-medium text-sm"
+            className="hover:bg-[#2D3A80] px-4 py-2 rounded-full font-medium text-sm"
           >
             Pricing
           </a>
           <a
             href="#"
-            className="text-white hover:bg-[#6B4226] hover:text-white px-4 py-2 rounded-full font-medium text-sm"
+            className="hover:bg-[#2D3A80] px-4 py-2 rounded-full font-medium text-sm"
           >
             Resources
           </a>
           <a
             href="#"
-            className="text-white underline underline-offset-4 hover:bg-[#6B4226] hover:text-white px-4 py-2 rounded-full text-sm"
+            className="underline underline-offset-4 hover:bg-[#2D3A80] px-4 py-2 rounded-full text-sm"
           >
             Sign in
           </a>
-          <a
-            href="#"
-            className="bg-[#6B4226] text-white px-6 py-2 rounded text-sm"
-          >
+          <a href="#" className="bg-[#2D3A80] px-6 py-2 rounded text-sm">
             Sign up
           </a>
         </div>
