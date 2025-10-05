@@ -13,9 +13,9 @@ export default function Consultation() {
   return (
     <div className="w-full">
       {/* Top Section */}
-      <section className="bg-[#4E6C50] text-white py-20">
-        <div className="max-w-[98%] mx-auto px-10">
-          <h2 className="text-3xl font-semibold mb-12">
+      <section className="bg-[#4E6C50] text-white py-16 md:py-28">
+        <div className="w-full md:w-[98%] mx-auto px-6 md:px-10">
+          <h2 className="text-3xl font-semibold mb-8 md:mb-16">
             Consultations that move you forward
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-y-20 px-6">

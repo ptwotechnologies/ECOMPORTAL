@@ -36,7 +36,7 @@ const StartupHero = () => {
     <div className="min-h-screen flex flex-col items-center">
       {/* Mobile View - Keep as is */}
       <div className="block md:hidden w-full">
-        <section className="bg-[#C76B3D] w-full mx-auto rounded-b-2xl px-6 pt-6 pb-24 text-white shadow-lg">
+        <section className="bg-[#C76B3D] w-full mx-auto rounded-2xl px-6 pt-12 pb-24 text-white shadow-lg">
           {/* Small tagline */}
           <p className="text-[11px] tracking-widest text-white/80 text-center mb-3">
             For Service Professionals

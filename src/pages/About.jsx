@@ -6,7 +6,7 @@ import AboutFooter from "../components/about/AboutFooter";
 
 const About = () => {
   return (
-    <div>
+    <div className="bg-[#FCF5E5]">
       <Navbar></Navbar>
       <AboutUs></AboutUs>
       <ValueSection></ValueSection>

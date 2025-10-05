@@ -9,20 +9,24 @@ import Channel from "./pages/Channel";
 import Investor from "./pages/Investor";
 import Startup1 from "./pages/Startup1";
 import Service1 from "./pages/Service1";
+import Contact from "./pages/Contact";
+import Login from "./pages/Login";
 
 const App = () => {
   return (
-    <div className="bg-[#FCF5E5]">
+    <div>
       {/* <Homepage></Homepage> */}
       {/* <About></About> */}
       {/* <Service></Service> */}
       {/* <Startup></Startup> */}
       {/* <Individual></Individual> */}
       {/* <Channel></Channel> */}
-      <JoinUs></JoinUs>
+      {/* <JoinUs></JoinUs> */}
       {/* <Investor></Investor> */}
       {/* <Startup1></Startup1> */}
       {/* <Service1></Service1> */}
+      {/* <Contact></Contact> */}
+      {/* <Login></Login> */}
     </div>
   );
 };

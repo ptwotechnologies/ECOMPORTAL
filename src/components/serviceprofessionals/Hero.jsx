@@ -12,7 +12,7 @@ const HomePage = () => {
   return (
     <div className="min-h-screen flex flex-col items-center">
       <div className="block md:hidden w-full">
-        <section className="bg-[#2D3A80] w-full mx-auto rounded-b-2xl px-6 pt-6 pb-24 text-white shadow-lg">
+        <section className="bg-[#2D3A80] w-full mx-auto rounded-2xl px-6 pt-12 pb-24 text-white shadow-lg">
           {/* Small tagline */}
           <p className="text-[11px] tracking-widest text-white/80 text-center mb-3">
             For Service Professionals
@@ -46,16 +46,16 @@ const HomePage = () => {
         {/* Feature chips */}
         <section className="py-8 mt-6 ">
           <div className="px-6 grid grid-cols-2 gap-x-8 gap-y-16 text-white">
-            <div className="rounded-xl px-4 py-3 text-center text-sm font-medium border-2 border-white shadow-inner bg-[#d4a373]">
+            <div className="rounded-xl px-4 py-3 text-center text-sm font-medium border-2 border-white shadow-xl bg-[#d4a373]">
               Verified Client Pipelines
             </div>
-            <div className="rounded-xl px-4 py-3 border-2 border-white text-center text-sm font-medium shadow-inner bg-[#d4a373]">
+            <div className="rounded-xl px-4 py-3 border-2 border-white text-center text-sm font-medium shadow-xl bg-[#d4a373]">
               Admin-Controlled Payments
             </div>
-            <div className="rounded-xl px-4 py-3 border-2 border-white text-center text-sm font-medium shadow-md bg-[#002A30] text-white">
+            <div className="rounded-xl px-4 py-3 border-2 border-white text-center text-sm font-medium shadow-md bg-[#002A30]">
               Industry Expert Guidance
             </div>
-            <div className="rounded-xl px-4 py-3 border-2 border-white text-center text-sm font-medium shadow-md bg-[#002A30] text-white">
+            <div className="rounded-xl px-4 py-3 border-2 border-white text-center text-sm font-medium shadow-md bg-[#002A30]">
               Automated Client Matching
             </div>
           </div>
@@ -92,17 +92,17 @@ const HomePage = () => {
       <hr className="w-full border-0 h-[1px] bg-gray-400 mt-24 hidden md:block" />
 
       <div className="w-full max-w-[95%] mx-auto px-6 py-12 my-12 hidden md:block">
-        <div className="hidden md:flex justify-center w-[70%] mx-auto items-center">
+        <div className="hidden md:flex justify-center w-[90%] mx-auto items-center">
           {features.map((feature, i) => (
             <div
               key={i}
-              className="flex flex-col items-center text-center px-10 relative border-r-2 border-gray-300"
+              className="flex flex-col items-center text-center px-10 relative border-r border-gray-400"
             >
               {/* Icon placeholder */}
-              <div className="w-14 h-14 rounded-md bg-gray-200 mb-4"></div>
+              <div className="w-14 h-14 rounded-2xl bg-gray-200 mb-4"></div>
 
               {/* Text */}
-              <p className="text-sm font-semibold text-[#1C1C1C] leading-snug">
+              <p className="text-[16px] font-medium text-[#1C1C1C] leading-[30px]">
                 {feature}
               </p>
 

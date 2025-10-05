@@ -202,8 +202,8 @@ const PortalIntro = () => {
 
       {/* mobile */}
       <div className="block md:hidden w-full">
-        <div className="text-[#4E6C50] p-8">
-          <h2 className="text-4xl font-poppins font-semibold my-4">
+        <div className="text-[#4E6C50] py-8 px-4">
+          <h2 className="text-3xl md:text-4xl font-poppins font-semibold my-4">
             Who is this portal for?
           </h2>
           <div className="flex overflow-x-auto gap-4 py-4">
@@ -243,16 +243,16 @@ const PortalIntro = () => {
           </div>
         </div>
         {/* Blue Section  */}
-        <div className="rounded-t-md bg-[#001032] opacity-95 text-white px-8 py-12">
-          <h1 className="text-3xl font-semibold leading-relaxed ">
+        <div className="rounded-t-md bg-[#001032] opacity-95 text-white px-6 py-8 ">
+          <h1 className="text-3xl leading-relaxed ">
             Created by founders, who needed it first
           </h1>
-          <p className="text-md pt-6 leading-relaxed">
+          <p className="text-[15px] font-extralight pt-6 leading-relaxed">
             You see, we’ve already spent years chasing investors, burning cash
             on Facebook ads, and paying agencies that promised the moon, guess
             what? most of it went nowhere.
           </p>
-          <p className="my-4">
+          <p className="text-[15px] font-extralight my-4">
             That’s when we realized — The problem wasn’t our ideas. It was the
             system around us.
           </p>
@@ -272,7 +272,7 @@ const PortalIntro = () => {
           <div className="bg-[#616B80] my-10 px-4 py-3 text-sm rounded-full">
             That’s when we decided, we need to fix this...
           </div>
-          <p className="my-4">
+          <p className="text-[15px] my-4">
             So our team sat together, spent months on planning, strategizing,
             building and came up{" "}
             <span className="underline underline-offset-4 cursor-pointer">

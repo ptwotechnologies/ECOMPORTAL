@@ -15,3 +15,8 @@ body {
 ::-webkit-scrollbar{
   display: none;
 }
+.outlined-text {
+  color: white;
+  -webkit-text-stroke: 0.6px black;
+  -webkit-text-fill-color: white;
+}

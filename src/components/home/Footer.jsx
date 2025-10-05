@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
+import Logo from '../../assets/manuecom.png'
 
 const Footer = () => {
   const [openTrust, setOpenTrust] = useState(false);
@@ -147,6 +148,11 @@ const Footer = () => {
           })}
         </div>
       </div>
+       <img
+        src={Logo}
+        alt=""
+        class="block mx-auto mt-20 h-44 md:h-96 w-auto"
+      />
     </footer>
   );
 };

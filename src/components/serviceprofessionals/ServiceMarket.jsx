@@ -39,28 +39,28 @@ const testimonials = [
 ];
 
 const FeatureItem = ({ title, desc }) => (
-  <p>
-    <span className="font-semibold">• {title}</span> <br />
+  <p className="font-medium">
+    <span className="leading-[40px]">• {title}</span> <br />
     {desc}
   </p>
 );
 
 const TestimonialCard = ({ bg, text, designation, company }) => (
-  <div className="flex flex-col md:flex-row rounded-md border border-gray-500 overflow-hidden">
+  <div className="flex flex-col md:flex-row rounded-md border border-gray-500 overflow-hidden" style={{ backgroundColor: bg }}>
     {/* Left Section */}
     <div
-      className="text-white p-10 md:w-4/5"
-      style={{ backgroundColor: bg }}
+      className="outlined-text font-semibold p-10 md:w-4/5"
+     
     >
-      <p className="text-sm md:text-base leading-relaxed pt-4">{text}</p>
-      <div className="mt-4 text-xs md:text-sm opacity-75 flex flex-col gap-3">
+      <p className="text-sm md:text-[18px] leading-relaxed pt-4">{text}</p>
+      <div className="mt-4 text-xs md:text-[14px] flex flex-col gap-1">
         <span>{designation},</span>
         <span>{company}</span>
       </div>
     </div>
 
     {/* Right White Box */}
-    <div className="bg-gray-100 md:w-1/2 rounded-l-md"></div>
+    <div className="bg-gray-100 md:w-1/2 rounded-l-xl"></div>
   </div>
 );
 
@@ -69,13 +69,13 @@ const ServiceMarket = () => {
   return (
     <section className="px-6 md:px-16 py-16 hidden md:block">
       {/* Heading */}
-      <h2 className="text-2xl md:text-4xl font-semibold text-[#323e56] mb-16">
+      <h2 className="text-2xl md:text-4xl font-semibold text-[#323e56] mb-16 leading-[40px]">
         The broken loops in the market
       </h2>
 
-      <div className="grid md:grid-cols-2 gap-10">
+      <div className="flex justify-center w-full items-center gap-10">
         {/* Left Side - Text */}
-        <div className="space-y-4 text-gray-700 text-sm md:text-base">
+        <div className="space-y-4 w-[40%] text-black text-sm md:text-base">
           <h1 className="font-semibold py-4">
             The support system you’ve been missing
           </h1>
@@ -85,12 +85,12 @@ const ServiceMarket = () => {
         </div>
 
         {/* Right Side - Color Cards */}
-        <div className="grid grid-cols-2 gap-6">
+        <div className="w-[50%] grid grid-cols-2 gap-6">
           {["bg-gray-100", "bg-[#748783]", "bg-[#606776]", "bg-[#76736d]"].map(
             (color, i) => (
               <div
                 key={i}
-                className={`w-full h-28 md:h-40 ${color} rounded-md shadow-sm`}
+                className={`w-full h-28 md:h-72 ${color} rounded-md shadow-lg`}
               ></div>
             )
           )}
