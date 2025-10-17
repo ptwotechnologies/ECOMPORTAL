@@ -1,37 +1,41 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+import Portal2 from "../../assets/portalIntro/portal2.png";
+import Portal1 from "../../assets/portalIntro/portal1.png";
+import Portal3 from "../../assets/portalIntro/portal3.png";
+import Portal4 from "../../assets/portalIntro/portal4.png";
 const PortalIntro = () => {
   const cards = [
     {
       name: "",
-      image: "/portal1.png",
+      image: Portal1,
       para: "You’re building a startup that solves a real-world problem",
     },
     {
       name: "Investors",
-      image: "/portal2.png",
+      image: Portal2,
       para: "You want incubated startups curated to your domain",
     },
     {
       name: "Service Professionals",
-      image: "/portal3.png",
+      image: Portal3,
       para: "You want startups curated to your domain",
     },
   ];
   const mobileCards = [
     {
       name: "Startups",
-      image: "/portal1.png",
+      image: Portal1,
       para: "You’re building a startup that solves a real-world problem ",
     },
     {
       name: "Investors",
-      image: "/portal2.png",
+      image: Portal2,
       para: "You want incubated startups curated to your domain",
     },
     {
       name: "Service Professionals",
-      image: "/portal3.png",
+      image: Portal3,
       para: "You want startups curated to your domain",
     },
   ];
@@ -41,7 +45,7 @@ const PortalIntro = () => {
       <div className="hidden md:block bg-[#FCF5E5] w-full h-full mt-16">
         {/* Brown Section */}
         <section className="w-full rounded-[40px] bg-[#6B4226] px-16 py-12 pb-20 text-white shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
-          <h2 className="text-4xl font-semibold mb-10">
+          <h2 className="text-4xl font-semibold mb-14">
             Who is this portal for?
           </h2>
 
@@ -56,7 +60,7 @@ const PortalIntro = () => {
 
                 <div className="h-6 flex items-center justify-center">
                   {card.name && (
-                    <span className="px-2 bg-[#6B4226] text-white text-lg font-medium">
+                    <span className="px-2 bg-[#6B4226] text-white text-2xl font-medium">
                       {card.name}
                     </span>
                   )}
@@ -99,7 +103,7 @@ const PortalIntro = () => {
         </div>
 
         {/* Blue Section */}
-        <div className="relative bg-[#001032] opacity-90 w-full px-6 md:px-16 py-20 md:py-28 mt-24 rounded-t-[30px]">
+        <div className="relative bg-[#1a2744] opacity-90 w-full px-6 md:px-16 py-20 md:py-28 mt-24 rounded-t-[30px]">
           {/* Dark overlay */}
           <div className="absolute inset-0 bg-[#001032] opacity-90 rounded-[30px]"></div>
 
@@ -184,9 +188,9 @@ const PortalIntro = () => {
                 </div>
               </div>
 
-              <div className="mt-12 w-full bg-white rounded-2xl shadow-lg overflow-hidden flex justify-center">
+              <div className="mt-20 w-full bg-white rounded-2xl shadow-lg overflow-hidden flex justify-center">
                 <img
-                  src="/portal4.png"
+                  src={Portal4}
                   alt=""
                   className="w-full max-w-3xl max-h-[500px] object-cover rounded-md"
                 />
@@ -203,7 +207,7 @@ const PortalIntro = () => {
       {/* mobile */}
       <div className="block md:hidden w-full">
         <div className="text-[#4E6C50] py-8 px-4">
-          <h2 className="text-3xl md:text-4xl font-poppins font-semibold my-4">
+          <h2 className="text-4xl w-[80%] leading-[50px] font-poppins font-semibold my-4">
             Who is this portal for?
           </h2>
           <div className="flex overflow-x-auto gap-4 py-4">

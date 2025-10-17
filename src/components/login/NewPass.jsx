@@ -7,8 +7,8 @@ function NewPass() {
 
   return (
     <>
-      <div className="min-h-screen mt-4 md:mt-12 flex items-center justify-center p-4 md:p-8">
-        <div className="w-full max-w-[98%] md:gap-20 flex items-center justify-center">
+      <div className="min-h-screen m-0 md:mt-12 flex items-center justify-center p-0 md:p-8">
+        <div className="w-full md:w-[98%] md:gap-20 flex items-center justify-center">
           {/* Left Side - centered */}
           <div className="hidden lg:flex flex-col justify-center items-center mb-[260px]">
             <div>
@@ -27,15 +27,15 @@ function NewPass() {
           </div>
 
           {/* Right Side - Form */}
-         <div className="w-full lg:w-auto lg:min-w-[480px] flex flex-col justify-center items-center rounded-[20px] shadow-xl border-[19px] border-[#6B4226] p-8 md:p-12">
+         <div className="w-full lg:w-auto lg:min-w-[480px] flex flex-col justify-center items-center md:rounded-[20px] shadow-xl border-[19px] border-[#6B4226] p-8 md:p-12">
             {/* Logo */}
             <img
               src={Logo}
               alt="Logo"
-              className="w-40 h-40 md:w-[200px] md:h-[200px] object-contain"
+              className="w-60 h-60 md:w-[200px] md:h-[200px] object-contain scale-150"
             />
 
-            <p className="text-center text-[15px] font-medium text-[#6B4226] mb-8 mt-2">
+            <p className="text-center text-[15px] font-medium text-[#6B4226] mb-8 mt-2 md:my-8">
               Set your new password and confirm the new password
             </p>
 
@@ -51,7 +51,7 @@ function NewPass() {
                 placeholder="Confirm New Password"
                 className="w-full px-4 py-3 border border-[#E5E7EB] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6B4423] text-[14px] text-[#111827] placeholder:text-[#9CA3AF]"
               />
-              <div className="text-gray-400 text-[10px] space-y-2">
+              <div className="text-gray-400 text-[10px] space-y-4">
                 <p>
                   Password must be strong and contain alphanumeric(123abc), one
                   uppercase letter and one special character(@,#,$)
@@ -66,7 +66,7 @@ function NewPass() {
                 </div>
               </div>
             </div>
-            <button className="w-full bg-[#6B4423] mt-28 text-white font-normal py-3.5 rounded-lg hover:bg-[#5A3A1F] transition-colors duration-200 text-[14px] shadow-md">
+            <button className="w-full bg-[#6B4423] mt-40 text-white font-normal py-3.5 rounded-lg hover:bg-[#5A3A1F] transition-colors duration-200 text-[14px] shadow-md">
               Reset Your Password
             </button>
           </div>

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { FiCheck, FiArrowRight } from "react-icons/fi";
-import logo1 from "../../assets/logo1.png";
-import logo2 from "../../assets/logo2.png";
-import logo3 from "../../assets/logo3.png";
-import logo4 from "../../assets/logo4.png";
-import logo5 from "../../assets/logo5.png";
-import logo6 from "../../assets/logo6.png";
+import logo1 from "../../assets/contact/logo1.png";
+import logo2 from "../../assets/contact/logo2.png";
+import logo3 from "../../assets/contact/logo3.png";
+import logo4 from "../../assets/contact/logo4.png";
+import logo5 from "../../assets/contact/logo5.png";
+import logo6 from "../../assets/contact/logo6.png";
 
 const ContactHero = () => {
   const [formData, setFormData] = useState({

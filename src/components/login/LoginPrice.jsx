@@ -78,10 +78,10 @@ function LoginPrices() {
 
   return (
     <>
-      <div className="min-h-screen mt-4 md:mt-12 flex items-center justify-center p-4 md:p-8">
+      <div className="min-h-screen md:mt-12 flex items-center justify-center md:p-8">
         <div className="w-full flex items-center justify-between gap-8">
           {/* Left Side */}
-          <div className="hidden lg:flex w-1/3 flex-col justify-center items-center mb-[260px]">
+          <div className="hidden md:flex w-1/3 flex-col justify-center items-center mb-[260px]">
             <div>
               <img
                 src={Logo}
@@ -98,7 +98,7 @@ function LoginPrices() {
           </div>
 
           {/* Right Side */}
-          <div className="w-full lg:w-2/3 flex flex-col justify-center items-center rounded-[20px] shadow-xl border-[19px] border-[#6B4226] p-8 md:p-12">
+          <div className="w-full lg:w-2/3 flex flex-col justify-center items-center md:rounded-[20px] shadow-xl border-[19px] border-[#6B4226] p-8 md:p-12">
             {/* Logo */}
             <img
               src={Logo}

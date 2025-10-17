@@ -7,16 +7,19 @@ const GetStarted = () => {
       title: "Startup",
       color: "#6B4226",
       button: "Startups",
+      text:" Start exploring, connect with others, get listed, build your portfolio, and go live.",
     },
     {
       title: "Investor",
       color: "#C76B3D",
       button: "Get Started",
+      text:"Share your investment focus, preferred industries, ticket sizes, and past experience",
     },
     {
-      title: "Mentor",
+      title: "Service Professionals",
       color: "#4E6C50",
-      button: "Mentors",
+      button: "Service Professionals",
+      text:"Get discovered by verified startups, respond to interest, and convert leads directly",
     },
   ];
 
@@ -24,11 +27,11 @@ const GetStarted = () => {
     <div className="py-16 px-4 w-full">
       {/* Heading */}
       <div className="text-center mb-16">
-        <div className="text-2xl font-semibold text-[#001032]">
-          <h1>Great!</h1> How do I get started then?
+        <div className="text-3xl font-roboto font-semibold text-[#001032]">
+          <h1 >Great!</h1> How do I get started then?
         </div>
-        <p className="mt-4 text-sm max-w-[75%] mx-auto text-[#001032]">
-          Simple, just choose which profile fits you, and we'll show you what to
+        <p className="mt-6 text-sm max-w-[75%] mx-auto text-[#001032]">
+          Simple, just choose which profile fits you, <br /> and we'll show you what to
           do next.
         </p>
       </div>
@@ -45,12 +48,11 @@ const GetStarted = () => {
               <div className="md:block hidden w-16 h-16 rounded-sm bg-white"></div>
               <h3 className="text-xl font-semibold">{profile.title}</h3>
             </div>
-            <p className="my-2 md:my-4 text-[16px] md:text-[20px] cursor-pointer">
+            <p className="my-2 md:my-4 text-[16px]  cursor-pointer">
               Sign up and create your account.
             </p>
-            <p className="text-[14px] md:text-[16px] leading-relaxed w-[80%]">
-              Start exploring, connect with others, get listed, build your
-              portfolio, and go live.
+            <p className="text-[14px] leading-relaxed w-[70%]">
+              {profile.text}
             </p>
             <button
               className={`mt-8 md:mt-4 absolute bottom-8 right-8 py-2 px-4 flex items-center gap-4 ${

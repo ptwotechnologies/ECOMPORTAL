@@ -13,7 +13,7 @@ export default function Consultation() {
   return (
     <div className="w-full">
       {/* Top Section */}
-      <section className="bg-[#4E6C50] text-white py-16 md:py-28">
+      <section className="bg-[#4e6c50] text-white py-16 md:py-28">
         <div className="w-full md:w-[98%] mx-auto px-6 md:px-10">
           <h2 className="text-3xl font-semibold mb-8 md:mb-16">
             Consultations that move you forward
@@ -22,9 +22,9 @@ export default function Consultation() {
             {items.map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col border-l-2 border-white pl-4 justify-center gap-2"
+                className="flex flex-col border-l border-gray-400 pl-4 justify-center gap-2"
               >
-                <h3 className="text-3xl font-semibold px-2">{index + 1}</h3>
+                <h3 className="text-5xl font-medium px-2">{index + 1}</h3>
                 <p>{item.name}</p>
               </div>
             ))}

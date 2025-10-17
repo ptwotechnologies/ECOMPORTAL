@@ -7,10 +7,10 @@ function ResetPass() {
 
   return (
     <>
-      <div className="min-h-screen mt-4 md:mt-12 flex items-center justify-center p-4 md:p-8">
-        <div className="w-full max-w-[98%] md:gap-20 flex items-center justify-center">
+      <div className="min-h-screen m-0 md:mt-12 flex items-center justify-center p-0 md:p-8">
+        <div className="w-full md:w-[98%] md:gap-20 flex items-center justify-center">
           {/* Left Side - centered */}
-          <div className="hidden lg:flex flex-col justify-center items-center mb-[260px]">
+          <div className="hidden md:flex flex-col justify-center items-center mb-[260px]">
             <div>
               <img
                 src={Logo}
@@ -27,20 +27,21 @@ function ResetPass() {
           </div>
 
           {/* Right Side - Form */}
-          <div className="w-full md:w-1/2 flex flex-col justify-center items-center rounded-[20px] shadow-xl border-[19px] border-[#6B4226] p-8 md:p-12">
+          <div className="bg-white md:rounded-[20px] shadow-xl border-[19px] border-[#6B4226] p-8 md:p-12 flex flex-col items-center w-full md:w-1/2">
             {/* Logo */}
             <img
               src={Logo}
-              alt="Logo"
-              className="w-40 h-40 md:w-[200px] md:h-[200px] object-contain"
+              alt="Manuecom Logo"
+              className="w-60 h-60 md:w-[200px] md:h-[200px] object-contain scale-150"
             />
+
             <p className="text-center text-[15px] font-medium text-[#6B4226] mb-8 mt-2">
               Enter the five digit code received in the text or email
             </p>
 
             {/* Input Fields */}
             <div className="space-y-6 w-full">
-              <div className="flex gap-4 justify-center w-full my-8 mb-40">
+              <div className="flex gap-4 justify-center w-full my-8 mb-60">
                 {[1, 2, 3, 4, 5].map((item) => (
                   <div className="w-10 h-10 md:w-16 md:h-16 rounded-md border border-gray-400"></div>
                 ))}
@@ -55,7 +56,7 @@ function ResetPass() {
       </div>
 
       {/* Footer */}
-      <div className="hidden md:block mx-20 mt-28 pb-12">
+      <div className="hidden md:block mx-20 mt-24 pb-12">
         <p className="text-[16px] leading-relaxed text-[#0f1623]">
           Terms, Privacy Disclosures Cookie Settings © Artestor Technologies LLP
         </p>

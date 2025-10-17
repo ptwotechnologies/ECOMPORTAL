@@ -11,10 +11,11 @@ import Startup1 from "./pages/Startup1";
 import Service1 from "./pages/Service1";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
+import Profile from "./pages/Profile";
 
 const App = () => {
   return (
-    <div>
+    <div className="font-poppins">
       {/* <Homepage></Homepage> */}
       {/* <About></About> */}
       {/* <Service></Service> */}
@@ -27,6 +28,7 @@ const App = () => {
       {/* <Service1></Service1> */}
       {/* <Contact></Contact> */}
       {/* <Login></Login> */}
+      <Profile></Profile>
     </div>
   );
 };

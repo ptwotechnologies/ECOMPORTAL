@@ -14,7 +14,7 @@ import PassResetSuccess from "../components/login/PassResetSuccess";
 const Login = () => {
   return (
     <div className="bg-white">
-      <Login1></Login1>
+      {/* <Login1></Login1> */}
       {/* <Login2></Login2> */}
       {/* <Login3></Login3> */}
       {/* <Login4></Login4> */}

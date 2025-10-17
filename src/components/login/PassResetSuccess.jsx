@@ -6,9 +6,9 @@ function PassResetSuccess() {
   return (
     <div className="min-h-screen flex flex-col justify-between bg-white">
       {/* Main Content */}
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-8 p-6 md:p-12">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:p-12">
         {/* Left Side - Logo and Text */}
-        <div className="hidden lg:flex flex-col justify-center items-center mb-[260px]">
+        <div className="hidden md:flex flex-col justify-center items-center mb-[260px]">
           <div>
             <img
               src={Logo}
@@ -25,12 +25,12 @@ function PassResetSuccess() {
         </div>
 
         {/* Right Side - Payment Card */}
-        <div className="bg-white rounded-[20px] border-[6px] border-[#6B4226] shadow-lg p-10 flex flex-col items-center w-full md:w-1/2">
+        <div className="bg-white md:rounded-[20px] shadow-xl border-[19px] border-[#6B4226] p-8 md:p-12 flex flex-col items-center w-full md:w-1/2">
           {/* Logo */}
           <img
             src={Logo}
             alt="Manuecom Logo"
-            className="w-[180px] h-auto mb-6"
+              className="w-60 h-60 md:w-[200px] md:h-[200px] object-contain scale-150"
           />
 
           {/* Instruction */}

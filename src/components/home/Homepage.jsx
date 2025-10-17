@@ -1,4 +1,5 @@
 import React from "react";
+import HeroHome from "../../assets/heroHome.png";
 
 const HomePage = () => {
   const features = [
@@ -26,7 +27,7 @@ const HomePage = () => {
             </span>
           </div>
 
-          <h1 className="font-semibold leading-[59px] mb-4 text-4xl">
+          <h1 className="font-semibold leading-[59px] mb-4 text-4xl font-roboto">
             Everything you need to scale your startUp
           </h1>
 
@@ -63,7 +64,7 @@ const HomePage = () => {
         <div className="flex flex-col justify-center gap-32">
           <div className="shadow-lg overflow-hidden rounded-[20px] mx-8 -my-28 border border-black">
             <img
-              src="/image1.png"
+              src={HeroHome}
               alt="Investments"
               className="w-full h-full object-cover"
             />
@@ -81,11 +82,11 @@ const HomePage = () => {
               We’ve built a platform for startups →
             </span>
 
-            <h1 className="font-semibold text-4xl leading-[50px] text-[#6B4226] mt-10 mb-4">
+            <h1 className="font-semibold text-5xl leading-[60px] text-[#6B4226] font-roboto mt-10 mb-4">
               Everything you need to scale your startUp
             </h1>
 
-            <p className="text-[#6B4226] text-[16px] leading-[35px] mb-6">
+            <p className="text-[#6B4226] text-[16px] leading-[35px] mb-4">
               Get expert-backed support, investor visibility, low-cost services
               and organic audience access — all in one system
             </p>
@@ -107,8 +108,8 @@ const HomePage = () => {
                 "You can tap into real audience without running a single ad",
                 "Access low-cost services and investor visibility all in one system",
               ].map((text, i) => (
-                <li key={i} className="flex items-center gap-6">
-                  <span className="w-[34px] h-[34px] rounded-sm bg-green-800"></span>
+                <li key={i} className="flex items-center gap-6 mb-10 ">
+                  <span className="w-6 h-6 rounded-sm bg-green-800"></span>
                   <span className="text-black text-sm">{text}</span>
                 </li>
               ))}
@@ -117,9 +118,9 @@ const HomePage = () => {
 
           <div className="flex flex-col justify-center gap-10 mt-20">
             <img
-              src="/image1.png"
+              src={HeroHome}
               alt="Investments"
-              className="w-full rounded-xl object-cover"
+              className="w-[900px] h-[800px] rounded-xl object-fit"
             />
             <button className="bg-[#6B4226] text-white font-medium px-10 py-3 rounded-md hover:opacity-90 transition text-lg">
               See How It Works →
@@ -163,10 +164,10 @@ const HomePage = () => {
               {artisans.map((text, i) => (
                 <div
                   key={i}
-                  className="flex flex-col gap-6 flex-shrink-0 w-[309px]"
+                  className="flex flex-col gap-6 flex-shrink-0 w-[300px]"
                 >
-                  <div className="bg-white rounded-lg p-6 shadow-md h-[384px] w-full"></div>
-                  <p className="text-[#6B4226] text-sm text-center w-full">
+                  <div className="bg-white rounded-lg p-6 shadow-sm h-[384px] w-full"></div>
+                  <p className="text-[#6B4226] text-[16px w-[90%] mx-auto">
                     {text}
                   </p>
                 </div>

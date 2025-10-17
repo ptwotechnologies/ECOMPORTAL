@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import Logo from "../../assets/manuecom.png";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -10,9 +11,9 @@ const Navbar = () => {
       {/* Left: Logo */}
       <div className="flex items-center space-x-2">
         <img
-          src="/logo.jpg"
+          src={Logo}
           alt="Manuecom"
-          className="h-10 w-10 md:h-32 md:w-32"
+          className="h-10 w-10 scale-150 md:h-32 md:w-32"
         />
       </div>
 
